@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css"> <!-- Réinitialise tous les styles par defaut (avant) -->
+    <link rel="stylesheet" href="css/base.css"> <!-- pas toucher -->
+    <link rel="stylesheet" href="css/header.css"> <!-- pas toucher -->
+    <link rel="stylesheet" href="css/main.css"> <!-- pas toucher -->
+    <link rel="stylesheet" href="css/exos.css"> 
+    <link rel="stylesheet" href="script.js"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@200;400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>EXOS JQUERY</title> 
+  </head> 
+  
+  <body>
+    <header> <!-- HEADER -->
+      <h1>EXO JQUERY</h1>
+      <div id="sub-header">
+        <nav>
+          <h3>Méthodes Class</h3>
+          <a href="#addClass">addClass</a>
+          <a href="#removeClass">removeClass</a>
+          <a href="#toggleClass">toggleClass</a>
+        </nav>
+
+        <nav>
+          <h3>Méthodes Css</h3>
+          <a href="#setcss">set css</a>
+          <a href="#getcss">get css</a>
+        </nav>
+
+        <nav>
+          <h3>Méthodes Slide / Fade</h3>
+          <a href="#fade">fade</a>
+          <a href="#slide">slide</a>
+        </nav>
+
+        <nav>
+          <h3>Méthodes traversantes</h3>
+          <a href="#siblings">siblings</a>
+          <a href="#ancestor">ancestor</a>
+          <a href="#descendant">descendant</a>
+        </nav>
+
+        <nav>
+          <h3>Méthodes traversants</h3>
+          <a href="#siblings">siblings</a>
+          <a href="#ancestor">ancestor</a>
+          <a href="#descendant">descendant</a>
+        </nav>
+
+        <nav>
+          <h3>Méthodes html</h3>
+          <a href="#gethtml">get html</a>
+          <a href="#getandset">get & set html</a>
+        </nav> 
+      </div>
+    </header>
+
+    <main>
+      <!-- EXO 1 -->
+      <section id="addClass"> 
+        <h2>Méthodes class - <span class="bold">addClass</span></h2>
+        <p>Lorsque vous cliquez sur un boutton, celui-ci doit se voir ajouter une class "is-active"</p>
+        <div class="flex-row">
+          <button class="btn-ex1">Click me</button>
+          <button class="btn-ex1">Click me</button>
+          <button class="btn-ex1">Click me</button>
+        </div>
+      </section>
+
+      <!-- EXO 2 -->
+      <section id="removeClass">
+        <h2>Méthodes class - <span class="bold">removeClass</span></h2>
+        <p>Lorsque vous cliquez sur un boutton, celui-ci doit se voir retirer une class "is-active"</p>
+        <div class="flex-row">
+          <button class="btn-ex2 is-active">Click me</button>
+          <button class="btn-ex2 is-active">Click me</button>
+          <button class="btn-ex2 is-active">Click me</button>
+        </div>
+      </section>
+
+      <!-- EXO 3 -->
+      <section id="toggleClass">
+        <h2>Méthodes class - <span class="bold">toggleClass</span></h2>
+        <p>Lorsque vous cliquez sur un boutton, celui-ci doit se voir retirer/ajouter une class "is-active"</p>
+        <div class="flex-row">
+          <button class="btn-ex3 is-active">Click me</button>
+          <button class="btn-ex3 ">Click me</button>
+          <button class="btn-ex3 is-active">Click me</button>
+        </div>
+      </section>
+
+      <!-- EXO 4 -->
+      <section id="setcss">
+        <h2>Méthodes Css - <span class="bold">set css</span></h2>
+        <p>Lorsque vous cliquez sur un boutton, celui-ci voit ses lettres en capital</p>
+        <div class="flex-row">
+          <button class="btn-ex4">Click me</button>
+          <button class="btn-ex4">Click me</button>
+        </div>
+      </section>
+
+      <!-- EXO 5 -->
+      <section id="getcss">
+        <h2>Méthodes Css - <span class="bold">get css</span></h2>
+        <p>Lorsque vous cliquez sur un boutton, celui-ci  doit récupérer sa taille de police et l'afficher dans une fenêtre alert()</p>
+        <div class="flex-row">
+          <button class="btn-ex5">Click me</button>
+        </div>
+      </section>
+
+      <!-- EXO 6 -->
+      <section id="fade">
+        <h2>Méthodes fade - <span class="bold">Fade</span></h2>
+        <p>Lorsque vous cliquez sur le boutton, celui-ci  doit faire disparaitre le carré </p>
+        <div class="flex-row">
+          <button class="btn-ex6-1">Click me</button>
+          <span class="box1"></span>
+        </div>
+        <p>Lorsque vous cliquez sur le boutton, celui-ci  doit faire apparaitre le carré </p>
+        <div class="flex-row">
+          <button class="btn-ex6-2">Click me</button>
+          <span class="box2 hide"></span>
+        </div>
+        <p>Lorsque vous cliquez sur le boutton, celui-ci  doit faire disparaitre/apparaitre le carré en 600ms</p>
+        <div class="flex-row">
+          <button class="btn-ex6-3">Click me</button>
+          <span class="box3"></span>
+        </div>
+      </section>
+
+      <!-- EXO 7 -->
+      <section id="slide">
+        <h2>Méthodes fade - <span class="bold">Fade</span></h2>
+        <p>Lorsque vous cliquez sur le boutton, celui-ci  doit faire disparaitre le paragraphe </p>
+        <div class="flex-column">
+          <button class="btn-ex7-1">Click me</button>
+          <h4>Je suis un paragraphe,Je suis un paragraphe,Je suis un paragraphe,Je suis un paragraphe,Je suis un paragraphe</h4>
+        </div>
+        <p>Lorsque vous cliquez sur le boutton, celui-ci  doit faire apparaitre le paragraphe </p>
+        <div class="flex-column">
+          <button class="btn-ex7-2">Click me</button>
+          <h4 class="hide">Je suis un paragraphe,Je suis un paragraphe,Je suis un paragraphe,Je suis un paragraphe,Je suis un paragraphe</h4>
+        </div>
+        <p>Lorsque vous cliquez sur le boutton, celui-ci doit faire disparaitre/apparaitre le paragraphe en 400ms</p>
+        <div class="flex-column">
+          <button class="btn-ex7-3">Click me</button>
+          <h4>Je suis un paragraphe,Je suis un paragraphe,Je suis un paragraphe,Je suis un paragraphe,Je suis un paragraphe</h4>
+        </div>
+      </section>
+
+      <!-- EXO 8 -->
+      <section id="siblings">
+        <h2>Méthodes traversante - <span class="bold">siblings</span></h2>
+        <p>Lorsque vous cliquez un boutton, celui-ci a la class "is-active", les autres n'ont plus la class "is-active" </p>
+        <div class="flex-row">
+          <button class="btn-ex8-1">Click me</button>
+          <button class="btn-ex8-2">Click me</button>
+          <button class="btn-ex8-3">Click me</button>
+          <button class="btn-ex8-4">Click me</button>
+        </div>
+      </section>
+
+      <!-- EXO 10 -->
+      <section id="ancestor">
+        <h2>Méthodes traversante - <span class="bold">ancestor</span></h2>
+        <p>Lorsque vous cliquez un boutton, celui-ci + box a la class "is-active", les autres n'ont plus la class "is-active" </p>
+        <div class="flex-row">
+          <button class="btn-ex9-1">Click me</button>
+          <span class="box"></span>
+        </div>
+        <div class="flex-row">
+          <button class="btn-ex9-2 is-active">Click me</button>
+          <span class="box is-active"></span>
+        </div>
+        <div class="flex-row">
+          <button class="btn-ex9-3 is-active">Click me</button>
+          <span class="box is-active"></span>
+        </div>
+      </section>
+
+      <!-- EXO 9 -->
+      <section id="descendant">
+        <h2>Méthodes traversante - <span class="bold">descendant</span></h2>
+        <p>Lorsque vous cliquez sur motherbox, celui-ci ajoute la class active à</p>
+        <div class="flex-row">
+          <div class="mother-box">
+            <div class="child-box"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXO 10 -->
+      <section id="gethtml">
+        <h2>Méthodes HTML - <span class="bold">get html</span></h2>
+        <p>Lorsque vous cliquez sur le boutton, afficher son text "click me" dans une fenetre alert()</p>
+        <button class="btn-ex10-1">Click me</button>
+      </section>
+
+      <!-- EXO 11 -->
+      <section id="getandsethtml">
+        <h2>Méthodes HTML - <span class="bold">get & set html</span></h2>
+        <p>Lorsque vous cliquez sur valider, afficher dans h5 "Bonjour *votre prénom* "</p>
+        <label for="name">Votre prénom:</label>
+        <input type="text" id="name" name="name">
+        <button class="btn-ex10-2">Valider</button>
+        <h5></h5>
+      </section>
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+  
+</html>

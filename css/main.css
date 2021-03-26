@@ -1,0 +1,119 @@
+main{
+    width:100%;
+    height:auto;
+    background-color:rgb(121, 186, 250)   
+}
+
+section{
+    width:100%;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.384) ;
+    padding:3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(odd){
+    background-color:rgb(48, 32, 136)   
+}
+section:nth-child(even){
+    background-color:rgb(31, 112, 71)   
+}
+
+section h2{
+    width:100%;
+    text-align: center;
+    color:white;
+    font-size:1.5rem;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom:0.75rem;
+}
+section p{
+    width:100%;
+    text-align: center;
+    color:white;
+    font-size:0.8rem;
+    line-height:1.3em;
+    font-weight: 300;
+    margin-bottom:4rem;
+}
+
+section h4{
+    width:45%;
+    color:red;
+    border:solid 1px red;
+    padding:1rem;
+    text-align:center;
+}
+
+span.bold{
+    font-weight: 400;
+}
+
+.flex-row{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+}
+
+.hide{
+    display:none;
+}
+
+
+
+/* EXO 10 */
+
+.mother-box{
+    width:10rem;
+    height:10rem;
+    background-color:white;
+}
+
+.child-box{
+    width:5rem;
+    height:5rem;
+    background-color:blue;
+}
+
+.child-box.is-active{
+    animation-name:move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+    0%{
+        transform:translate(0,0%)
+    }
+    25%{
+        transform:translate(0%,100%)
+    }
+    50%{
+        transform:translate(100%,100%)
+    }
+    75%{
+        transform:translate(100%,0%)
+    }
+}
+
+
+/* EXO 11 */
+
+input{
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}

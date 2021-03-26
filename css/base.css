@@ -1,0 +1,14 @@
+*, *:before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+  font-size:14px;
+  font-family: 'Noto Sans JP', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin:0 auto;
+  display:flex;
+}
